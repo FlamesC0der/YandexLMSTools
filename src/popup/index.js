@@ -74,8 +74,9 @@ function renderSettings() {
 
   let settings = {
     "main": {
-      "setting-dark": {txt: "Dark Theme", default: false, beta: true},
-      "setting-banner": {txt: "Remove Banner", default: true, beta: true},
+      "setting-dark": {txt: "Dark Theme", default: true, beta: true},
+      "setting-banner": {txt: "Remove Banner", default: true, beta: false},
+      "setting-parent-invite": {txt: "Remove Parent invite", default: false, beta: true}
     },
     "rating": {
       "setting-task-score": {txt: "Calculate task rating", default: true, beta: true},
@@ -156,7 +157,7 @@ function renderSettings() {
 //   console.log(rating)
 // }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", async function() {
   createLink(links.website, "link-website")
   createLink(links.donate, "link-donate")
   createLink(links.github, "link-github")

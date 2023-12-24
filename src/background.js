@@ -25,39 +25,3 @@ chrome.storage.onChanged.addListener(
     }
   }
 )
-// function Main() {
-//   console.log("YandexLMSTools By @FlamesCoder")
-
-//   function ScoreData () {
-//     url = getURLData()
-//     fetch(`https://lms.yandex.ru/api/student/lessonTasks?courseId=${url[4]}&lessonId=${url[8]}&groupId=${url[6]}`)
-//     .then(response=>response.json())
-//     .then(tasks => {
-//       tasksNumber = {}
-//       taskGroupNumer = {}
-//       scores = {}
-
-//       tasks.forEach(taskGroup => {
-//         taskGroupNumer[taskGroup["type"]] = (taskGroupNumer[taskGroup["type"]] || 0) + 1
-//         taskGroup["tasks"].forEach(task => {
-//           type = task["tag"]["type"]
-//           score = task["scoreMax"]
-
-//           tasksNumber[type] = (tasksNumber[type] || 0) + 1
-//           scores[type] = (scores[type] || 0) + score
-//         });
-//       });
-
-//       let ScoreWrapper = document.createElement("div")
-//       ScoreWrapper.classList.add("yandexlmstools-score")
-
-//       const lessonProgress = document.querySelector(".student-lesson-progress__counts")
-
-//       lessonProgress.appendChild(ScoreWrapper)
-      
-//       Object.entries(scores).forEach(data => {
-//         ScoreWrapper.innerHTML += `<span class="yandexlmstools-score__field field__${data[0]}">${data[0]} - ${data[1]}</span>`
-//         console.log(data[0], data[1])
-//       })
-//     })
-//   }

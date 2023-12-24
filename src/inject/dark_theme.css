@@ -3,7 +3,9 @@ html, body {
   background: #1c1e1f !important;
 }
 
-* {
+/* Base */
+
+* :not(pre span) :not(pre span span) {
   color: #ffffff !important;
 }
 
@@ -13,6 +15,17 @@ html, body {
 
 .icon_type_signal-outline.icon_size_l {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiPjxkZWZzPjxmaWx0ZXIgaWQ9ImRhcmtyZWFkZXItaW1hZ2UtZmlsdGVyIj48ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMC4yODYgLTAuNzA2IC0wLjc3MiAwLjAwMCAxLjE5MCAtMC43NDIgMC4zMzEgLTAuNzYzIDAuMDAwIDEuMTczIC0wLjczMSAtMC43MDEgMC4yODggMC4wMDAgMS4xNDMgMC4wMDAgMC4wMDAgMC4wMDAgMS4wMDAgMC4wMDAiIC8+PC9maWx0ZXI+PC9kZWZzPjxpbWFnZSB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIGZpbHRlcj0idXJsKCNkYXJrcmVhZGVyLWltYWdlLWZpbHRlcikiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ0FBQUFBZ0NBWUFBQUJ6ZW5yMEFBQUFDWEJJV1hNQUFBc1RBQUFMRXdFQW1wd1lBQUFCRUVsRVFWUjRuTzNXc1VyRFVCVEc4WjhLVmNUUnpTZFFjQkVFc2FPTDRpczV1QlFkQkJVcStBamlPemo3QnU1YVN5ZWRSQVd4a2NBWmdvcWE5SnBTeUFjSFFyamYrZjczbmlTRVJoT3NYZHlqaDUxeEFQU1FSZDNWR2J5S1V3d0xBUG4xTVpiL00zZ1dYYndYZ2ovWEd3NHhrenA4RGxjUjhvSWpyS0dGZVd6Z1BBRHlOWmVZVGdsd0ZvMXZzZkxEdWpZZVl1MWV5cGtQOFJ6WHYya3J4dlNLcFJRQTNkalJTUW5QUlhqMlV3RGNSTFAxRXA3dDhGeW5BSGlLWmdzbFBJdmhlVXdCa0VXVjBWVGgrekFXZ0ZGOFg5UUFaTTBJTkEraDhiMkc3V2d5cU9BZGhIZXphbmlXdUNZUDRLL0hPOHFZS3FzZm9lMENRUDZMWHBzT3ZqbmlUcDBBcllEb3g4NDdjYS9SNU9rRE9zZVNSem5kSWM0QUFBQUFTVVZPUks1Q1lJST0iIC8+PC9zdmc+");
+}
+
+/* Menus */
+
+.student-profile-course-card {
+  border-color:#3f4547 !important;
+}
+
+.light-popup,
+.legouser__menu-footer {
+  background: #1c1e1f !important;
 }
 
 /* notifications */
@@ -27,7 +40,7 @@ html, body {
 /* Course */
 
 .course-card {
-  border: 1px solid #3f4547;
+  border-color: #3f4547 !important;
 }
 
 .lesson-card:not(.lesson-card_narrow) .lesson-card__percentage_non-zero {
@@ -43,7 +56,7 @@ html, body {
 }
 
 .link-list__item {
-  border: 1px solid #3f4547 !important;
+  border-color: #3f4547 !important;
 }
 
 .progress-bar_theme_light {
@@ -51,13 +64,13 @@ html, body {
 }
 
 .nav-tab_back {
-  background: #1c1e1f;
+  background: #1c1e1f !important;
 }
 
 /* Lesson tasks */
 
 .Accordion {
-  border: 1px solid #3f4547;
+  border-color: #3f4547 !important;
 }
 
 .solution-status_type_accepted .solution-status__text {
@@ -69,23 +82,45 @@ html, body {
 }
 
 .solution-status_type_review {
-  background: #ffeba02e;
+  background: #ffeba02e !important;
 }
 
 .Accordion-Item {
-  border-top: 1px solid #3f4547;
+  border-top: 1px solid #3f4547 !important;
 }
 
 .Accordion-Group:not(:last-of-type) .Accordion-Item:last-of-type {
-  border-bottom-color: #3f4547;
+  border-bottom-color: #3f4547 !important;
 }
 
 .superscript-icon { /* РУЧ */
-  background: #bc00ff8c;
+  background: #bc00ff8c !important;
 }
 
 /* Lesson */
 
 .Sideblock-Content {
   background: #232526 !important;
+}
+
+.CodeMirror-scroll,
+.CodeMirror-gutters,
+.code-editor__controls,
+.comments__form,
+.comments__textarea,
+.nav-tab {
+  background: #1c1e1f !important;
+}
+
+.yadc9f--rounded-wrapper,
+.y1b87d--comments__header,
+.comments__comment-text,
+.code-editor__controls,
+.y5bb67--submission__file,
+.code-editor__control-button {
+  border-color: #3f4547 !important;
+}
+
+.indicator_color_grey {
+  background: #747474 !important;
 }

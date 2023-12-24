@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "YandexLMSToolsTest",
-  "version": "1.0.0",
+  "name": "YandexLMSToolsDev",
+  "version": "1.1.0",
   "icons": {
     "48": "icons/ylt.png"
   },
