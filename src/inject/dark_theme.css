@@ -5,8 +5,9 @@ html, body {
 
 /* Base */
 
-* :not(pre span) :not(pre span span) {
+* :not(pre span) :not(pre span span) :not(pre code span) {
   color: #ffffff !important;
+  text-shadow: none !important;
 }
 
 .icon_type_search {
@@ -33,7 +34,8 @@ html, body {
 }
 
 /* notifications */
-.notification-center {
+.notification-center,
+.notification-center__message-wrapper {
   background: #1c1e1f !important;
 }
 
@@ -127,4 +129,22 @@ html, body {
 
 .indicator_color_grey {
   background: #747474 !important;
+}
+
+/* Meterials */
+
+.material__annotation {
+  background: #2e251e !important;
+}
+
+li::before {
+  color: #fff !important;
+}
+
+code {
+  background: #2e251e !important;
+}
+
+.token {
+  background: none !important;
 }
